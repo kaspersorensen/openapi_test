@@ -1,0 +1,20 @@
+openapi: '3.0.2'
+info:
+  title: Kasper's API
+  version: '1.0'
+servers:
+  - url: https://github.com/kaspersorensen
+paths:
+  /test:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Foo"
+components:
+    schemas:
+      Foo:
+        type: object
