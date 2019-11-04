@@ -100,6 +100,7 @@ paths:
         Approves an item that has been placed in the moderation queue.
         The content will be published into the containing community topic, post or article.
       requestBody:
+        required: false
         content:
           application/json:
             schema:
