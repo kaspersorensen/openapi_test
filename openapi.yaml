@@ -1,0 +1,12 @@
+openapi: 3.0.0
+info:
+  title: Zendesk Guide REST API
+  description: >
+    API for a Help Center provided via the Zendesk Guide and Zendesk Gather
+    products.
+  version: "2.0"
+servers:
+  - url: /api/v2
+paths:
+  /guide/brands:
+    $ref: "#endpoints_brands.yaml#/paths/~1guide~1brands"

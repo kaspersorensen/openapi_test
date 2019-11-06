@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Common API components
+  version: "2.0"
+components:
+  schemas:
+    ErrorListResponse:
+      type: object
+      properties:
+        errors:
+          type: array
+          items:
+            $ref: "#/components/schemas/ErrorListItem"
+    ErrorListItem:
+      type: object
+      properties:
+        title:
+          type: string
+          description: The error message.
+        code:
+          type: string
+          description: A unique identifier of the error.
+        meta:
+          type: object
+          description: Additional error information
